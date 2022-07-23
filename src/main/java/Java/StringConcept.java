@@ -7,6 +7,7 @@ public class StringConcept {
 		
 		
 		//please do practise.
+		//
 		
 		/*
 		 * 
@@ -39,6 +40,9 @@ public class StringConcept {
 		     str.substring(0, 5);
 		     
 		     System.out.println(str.substring(4, 14)); 
+		     
+		 //String comparsion
+		 //Please do your own practise .  
 		     
 		
 
