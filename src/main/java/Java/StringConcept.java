@@ -9,8 +9,9 @@ public class StringConcept {
 		/*
 		 * 
 		 * Two ways to create string 
-		 * String literal etc : String s= "i like automating software";
-		 * by using new memory operator. etc : ClassOne  classone = new ClassOne(" like automating software");
+		 * String literal etc : String s = "i like automating software";
+		 * by using new memory operator. etc : String   st = new String("like automating software");
+		 * Using String buffer and String builder
 		 * 
 		 */
 		
@@ -42,6 +43,31 @@ public class StringConcept {
 		     System.out.println(str.substring(4, 14)); // i will cut from 4th index to before 14th index on that given string.
 		     
 		 //String comparison
+		     String s1="sourov.";
+		     String s2="rahman";
+		     s1.equals(s2);//==
+		     System.out.println(s1.equals(s2));//t/f/f
+		     System.out.println(s1.equalsIgnoreCase(s2));//t/t/f
+		    
+		  //trim
+		     
+		    String p = "      i am on train ";
+		   System.out.println("before trim :"+p);
+		   String   p1=p.trim();//i am  on train
+		   System.out.println("after trim :"+p1);
+		   
+		   
+		  //Split 
+		   // javalearning//ava,earning
+		   String x ="java learning class";
+		String  sarry[] =  x.split(" ");//"java" , "learning" , "class"
+		
+		for (int i=0;i<sarry.length;i++ ) {
+			 System.out.println("inside loop and printin an array :---> "+sarry[i]);
+			
+		}
+		
+		 //task 
 		     
 		 //Please do your own practise.  
 		     
