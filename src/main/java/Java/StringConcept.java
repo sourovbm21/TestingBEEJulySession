@@ -16,7 +16,7 @@ public class StringConcept {
 		 */
 		
 		
-		
+		//please do your own 
 		
 		
 		     String str ="We are learning java";
@@ -81,7 +81,7 @@ public class StringConcept {
 		   System.out.println(a+b+w+y);//5java learning//23//
 		   System.out.println(w+y+(a+b)); //
 		   
-	int bc=0;//-10
+	int bc=10;//-10
 	
 	if (bc>=0) {
 		  System.out.println("yes it is positive number "+bc);//5
