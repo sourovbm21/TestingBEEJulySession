@@ -17,6 +17,7 @@ public class StringConcept {
 		
 		
 		//please do your own 
+		//do one step at a time .
 		
 		
 		     String str ="We are learning java";
