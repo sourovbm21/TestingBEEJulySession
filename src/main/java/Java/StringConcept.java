@@ -69,9 +69,28 @@ public class StringConcept {
 		
 		 //task 
 		     
-		 //Please do your own practise.  
-		     
+		String w ="java ";
+		String y="learning";
+		int a=2;
+		int b=3;
 		
+		   System.out.println(w+y);//java learning
+		
+		   System.out.println(a+b);//5
+		   System.out.println(w+y+a+b); //java learning23
+		   System.out.println(a+b+w+y);//5java learning//23//
+		   System.out.println(w+y+(a+b)); //
+		   
+	int bc=0;//-10
+	
+	if (bc>=0) {
+		  System.out.println("yes it is positive number "+bc);//5
+	}else {
+		System.out.println("yes it is negative  number "+bc);//5
+	}
+	
+	
+	
 
 	}
 
