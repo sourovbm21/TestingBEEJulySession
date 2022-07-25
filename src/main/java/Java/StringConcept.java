@@ -60,6 +60,9 @@ public class StringConcept {
 		   
 		  //Split 
 		   // javalearning//ava,earning
+		   /*
+		    * Split method will return an arry of String.
+		    */
 		   String x ="java learning class";
 		String  sarry[] =  x.split(" ");//"java" , "learning" , "class"
 		
@@ -81,7 +84,9 @@ public class StringConcept {
 		   System.out.println(w+y+a+b); //java learning23
 		   System.out.println(a+b+w+y);//5java learning//23//
 		   System.out.println(w+y+(a+b)); //
+		
 		   
+		   //Prove given number is a positive number.
 	int bc=10;//-10
 	
 	if (bc>=0) {
