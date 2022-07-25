@@ -1,7 +1,7 @@
 package HomeWork;
 
 public class Task {
-	
+	//Hi all there is a task list 
 	
 	
 	 
@@ -9,7 +9,7 @@ public class Task {
 	/*
 	 * 01.Create a method with no arguments
 	 * 02.Create a method which return void;
-	 * 03Create a method which return a boolean value;
+	 * 03.Create a method which return a boolean value;
 	 * 04.Create a method with one parameter Data type is integer 
 	 * 05.Create a method with Two parameter Data type is String 
 	 * 06.Create a method with Two parameter Data type is integer and String 
@@ -22,7 +22,7 @@ public class Task {
 	 */
 	
 	
-	
+	//Task for 1st August to 6th August  is coming soon.
 	
 	
 	
