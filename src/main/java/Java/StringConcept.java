@@ -40,14 +40,31 @@ public class StringConcept {
 		                           
 		 //Substring //"We are learning java";//+111-0000-34567
 		     str.substring(0, 5);
-		     
+		     s.length();//
+		     System.out.println("########"+ s.length());
+		     System.out.println(s.substring(1, s.length()-1));
 		     System.out.println(str.substring(4, 14)); // i will cut from 4th index to before 14th index on that given string.
 		     
 		 //String comparison
 		     String s1="sourov.";
 		     String s2="rahman";
+		  
 		     s1.equals(s2);//==
-		     System.out.println(s1.equals(s2));//t/f/f
+		     
+		     
+		     
+		     
+		     System.out.println("#########################");
+		     String xx ="java";
+		     String yy="java";		     
+		     System.out.println("using equals method @@@@: "+xx.equals(yy));//value
+		     System.out.println("using equal to  : @@@@@@###"+ xx == yy);//ref variable 
+		     
+		     System.out.println("#########################");
+		     
+		     
+		     System.out.println("using equals method : "+s1.equals(s2));//t/f/f
+		     System.out.println("using equal to sign : "+s1==s2);//t/f/f
 		     System.out.println(s1.equalsIgnoreCase(s2));//t/t/f
 		    
 		  //trim
@@ -94,6 +111,50 @@ public class StringConcept {
 	}else {
 		System.out.println("yes it is negative  number "+bc);//5
 	}
+	
+	
+	
+	// String Buffer @ String builder 
+	
+	StringBuffer sb =  new StringBuffer("Java learning ");
+	              
+
+	 System.out.println(sb);
+	
+     
+	 for (int i=sb.length()-1;i>=0;i--) {
+		 
+		 System.out.print(sb.charAt(i));
+	 }
+	 
+	 
+	 // 1kg -$4.00
+	 //1kg -$4.00  
+	// 1kg -$4.00
+	
+	
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
