@@ -66,6 +66,17 @@ public class StringConcept {
 		     System.out.println("using equals method : "+s1.equals(s2));//t/f/f
 		     System.out.println("using equal to sign : "+s1==s2);//t/f/f
 		     System.out.println(s1.equalsIgnoreCase(s2));//t/t/f
+		     
+		  String pp = "Java";
+		  String qq = "Selenium";
+		  String yyy= "learning";
+		  
+		  pp.concat(qq);
+		  pp.concat(yyy);
+		  
+		  System.out.println("@@@@@@@@@@@@@@@@@"+  pp.concat(qq));
+		  System.out.println("@@@@@@@@@@@@@@@@@"+  pp.concat(yyy));
+		  
 		    
 		  //trim
 		     
