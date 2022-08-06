@@ -125,7 +125,7 @@ System.out.println(al.get(4));
 	 
 	 ArrayList<String> as = new ArrayList <String>();//10
 	 
-	 System.out.println("size of as  arry : ----> "+as.size());
+	 System.out.println("size of as  arry : ----> "+as.size());//10//
 	 
 	 as.add("java");
 	 as.add("java");
@@ -139,6 +139,7 @@ System.out.println(al.get(4));
 	
 	//list 
 	
+	 
 
 
 	}

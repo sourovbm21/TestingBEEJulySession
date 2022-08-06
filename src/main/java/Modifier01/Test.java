@@ -1,5 +1,8 @@
 package Modifier01;
 
+import java.util.Date;
+import java.util.Random;
+
 public class Test extends ClassOne{
 	
 	
@@ -47,6 +50,13 @@ public class Test extends ClassOne{
 //		ClassTwo classtwo =new ClassTwo();
 //		
 //		classtwo.CTwo();
+		
+		Date D = new Date();
+		D.getDate();
+		System.out.println(D.getDate());
+		System.out.println(D);
+		
+		Random r = new Random();
 		
 		
 
