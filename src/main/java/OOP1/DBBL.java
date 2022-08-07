@@ -4,6 +4,8 @@ public class DBBL implements BB,FDR{
 
 	
 
+	
+//if a class is implementing any interface then it is mandatory to define or override all methods of that interface.
 	public void credit() {
 
 		 System.out.println("i am in credit method ");

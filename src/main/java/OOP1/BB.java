@@ -22,7 +22,10 @@ public interface BB {
 	public void can_not_cell_doller();
 	public void can_accept_russian_rubel();
 	
-		
+	
+
+	
+	
 	
 	
 
