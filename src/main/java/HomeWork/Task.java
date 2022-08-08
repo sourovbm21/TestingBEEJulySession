@@ -1,11 +1,10 @@
 package HomeWork;
 
 public class Task {
+	
 	//Hi all there is a task list 
 	
 	
-	 
-	// We all have to finish below task before next class which will be held on Saturday 30th July
 	/*
 	 * 
 	 * 
@@ -23,8 +22,38 @@ public class Task {
 	 * 
 	 */
 	
+
 	
-	//Task for 1st August to 6th August  is coming soon.
+	// All of you have to finish below task before next class.(08/08/2022-12.08.2022)
+	/*
+	 * Problem:- 11.
+	 * Given a string and a non-negative int n, return a larger string
+	 * that is n copies of the original string.
+	 * Example below : 
+	  stringTimes("Hi", 2) → "HiHi"
+	  stringTimes("Hi", 3) → "HiHiHi" 
+	  stringTimes("Hi", 1) → "Hi"
+	 */
+	
+	/*
+	 * Problem:-12
+	 * Given a string, we'll say that the front is the first 3 chars of the string,
+	 * If the string length is less than 3, the front is whatever is there,
+	 * Return a new string which is 3 copies of the front.
+	 * Example below : 
+       front3("Java") → "JavJavJav"
+       front3("Chocolate") → "ChoChoCho"
+       front3("abc") → "abcabcabc"
+	 */
+	
+	   /*
+	    *Problem:-13
+	    * Given a string, take the last char and return a new string with the last char added at the front and back,
+	    * so "cat" yields "tcatt". The original string will be length 1 or more.
+      backAround("cat") → "tcatt"
+      backAround("Hello") → "oHelloo"
+      backAround("a") → "aaa
+	    */
 	
 	
 	
