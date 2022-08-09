@@ -34,6 +34,14 @@ public class Task {
 	  stringTimes("Hi", 3) → "HiHiHi" 
 	  stringTimes("Hi", 1) → "Hi"
 	 */
+	public static String problem_11(String s, int a) {
+
+		String newOne ="";
+		for (int i = 0; i < a; i++) {
+			newOne = newOne + s;
+		}
+		return newOne;
+	}
 	
 	/*
 	 * Problem:-12
@@ -58,9 +66,16 @@ public class Task {
 	
 	
 	
+	public static void main(String[] args) {
+		
+		
+		
+	System.out.println(problem_11("hello",3));	
 	
 	
-	
+		
+		
+	}
 	
 	
 	
