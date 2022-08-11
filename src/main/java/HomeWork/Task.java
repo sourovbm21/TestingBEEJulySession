@@ -73,6 +73,30 @@ public class Task {
 			return false;		   
 	   }
 	   
+	   /*
+	     * Problem :-15
+	     * Given a string,
+	     * take the first 2 chars and return the string with the 2 chars added at both the front and back,
+	     * so "kitten" yields"kikittenki".
+	     * If the string length is less than 2, use whatever chars are there.
+          front22("kitten") → "kikittenki"
+          front22("Ha") → "HaHaHa"
+          front22("abc") → "ababcab"
+	     * 
+	     */
+	   public static String problem_Fourteen(String str) {
+		    
+		   String 	newStr;
+	if (str.length()<=2) {
+		newStr = str+str+str;
+	}else {
+		String s=   str.substring(0, 2);
+		newStr = s+str+s;
+	}
+      return newStr;
+		   
+	   }
+	   
 
 	public static void main(String[] args) {
 
@@ -81,6 +105,7 @@ public class Task {
 		System.out.println(problem_Twelve("ja"));
 		System.out.println(problem_thirteen("J"));
 		System.out.println(problem_Fourteen(2));
+		System.out.println(problem_Fourteen("hello"));
 
 	}
 
