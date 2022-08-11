@@ -2,11 +2,9 @@ package HomeWork;
 
 public class Task {
 
-	// Hi all there is a task list
+	// After completing below task it will gives you enough confidence when you build your own logic.
 
 	/*
-	 * 
-	 * 
 	 * 01.Create a method with no arguments; 02.Create a method which return void;
 	 * 03.Create a method which return a boolean value; 04.Create a method with one
 	 * parameter Data type is integer; 05.Create a method with Two parameter Data
@@ -15,8 +13,6 @@ public class Task {
 	 * String , boolean; 08.Create a method which accept two integer arguments and
 	 * return sum of those two integer; 09.Create a method which accept two string
 	 * arguments and return boolean value; 10.Print 1 to 10 using while loop;
-	 * 
-	 * 
 	 */
 
 	// All of you have to finish below task before next
@@ -34,7 +30,6 @@ public class Task {
 		}
 		return newOne;
 	}
-
 	/*
 	 * Problem:-12 Given a string, we'll say that the front is the first 3 chars of
 	 * the string, If the string length is less than 3, the front is whatever is
@@ -52,7 +47,6 @@ public class Task {
 		}
 		return front + front + front;
 	}
-
 	/*
 	 * Problem:-13 Given a string, take the last char and return a new string with
 	 * the last char added at the front and back, so "cat" yields "tcatt". The
@@ -66,18 +60,17 @@ public class Task {
 
 	}
 	 /*
-	    * Problem-14
-	    * Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator
-	    * or35(3) → true
-     * or35(10) → true
-     * or35(8) → false
-	    */
+	  * Problem-14
+	  * Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator
+	  * or35(3) → true
+      * or35(10) → true
+      * or35(8) → false
+	  */
 	   public static boolean problem_Fourteen(int x) {
 		if  (x % 3 ==0 || x% 5 ==0) {
 			return true;
 		}else 
-			return false;
-		   
+			return false;		   
 	   }
 	   
 
