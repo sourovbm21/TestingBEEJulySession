@@ -59,13 +59,27 @@ public class Task {
 	 * original string will be length 1 or more. backAround("cat") → "tcatt"
 	 * backAround("Hello") → "oHelloo" backAround("a") → "aaa
 	 */
-
 	public static String problem_thirteen(String str) {
 		String last = str.substring(str.length() - 1);
 		String front = last + str + last;
 		return front;
 
 	}
+	 /*
+	    * Problem-14
+	    * Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator
+	    * or35(3) → true
+     * or35(10) → true
+     * or35(8) → false
+	    */
+	   public static boolean problem_Fourteen(int x) {
+		if  (x % 3 ==0 || x% 5 ==0) {
+			return true;
+		}else 
+			return false;
+		   
+	   }
+	   
 
 	public static void main(String[] args) {
 
@@ -73,6 +87,7 @@ public class Task {
 		System.out.println(problem_11("hello", 3));
 		System.out.println(problem_Twelve("ja"));
 		System.out.println(problem_thirteen("J"));
+		System.out.println(problem_Fourteen(2));
 
 	}
 
