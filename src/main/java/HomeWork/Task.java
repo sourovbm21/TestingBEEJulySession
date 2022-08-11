@@ -2,7 +2,8 @@ package HomeWork;
 
 public class Task {
 
-	// After completing below task it will gives you enough confidence when you build your own logic.
+	// After completing below task it will gives you enough confidence when you
+	// build your own logic.
 
 	/*
 	 * 01.Create a method with no arguments; 02.Create a method which return void;
@@ -30,6 +31,7 @@ public class Task {
 		}
 		return newOne;
 	}
+
 	/*
 	 * Problem:-12 Given a string, we'll say that the front is the first 3 chars of
 	 * the string, If the string length is less than 3, the front is whatever is
@@ -47,6 +49,7 @@ public class Task {
 		}
 		return front + front + front;
 	}
+
 	/*
 	 * Problem:-13 Given a string, take the last char and return a new string with
 	 * the last char added at the front and back, so "cat" yields "tcatt". The
@@ -57,46 +60,37 @@ public class Task {
 		String last = str.substring(str.length() - 1);
 		String front = last + str + last;
 		return front;
+	}
 
-	}
-	 /*
-	  * Problem-14
-	  * Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator
-	  * or35(3) → true
-      * or35(10) → true
-      * or35(8) → false
-	  */
-	   public static boolean problem_Fourteen(int x) {
-		if  (x % 3 ==0 || x% 5 ==0) {
+	/*
+	 * Problem-14 Return true if the given non-negative number is a multiple of 3 or
+	 * a multiple of 5. Use the % "mod" operator or35(3) → true or35(10) → true
+	 * or35(8) → false
+	 */
+	public static boolean problem_Fourteen(int x) {
+		if (x % 3 == 0 || x % 5 == 0) {
 			return true;
-		}else 
-			return false;		   
-	   }
-	   
-	   /*
-	     * Problem :-15
-	     * Given a string,
-	     * take the first 2 chars and return the string with the 2 chars added at both the front and back,
-	     * so "kitten" yields"kikittenki".
-	     * If the string length is less than 2, use whatever chars are there.
-          front22("kitten") → "kikittenki"
-          front22("Ha") → "HaHaHa"
-          front22("abc") → "ababcab"
-	     * 
-	     */
-	   public static String problem_Fourteen(String str) {
-		    
-		   String 	newStr;
-	if (str.length()<=2) {
-		newStr = str+str+str;
-	}else {
-		String s=   str.substring(0, 2);
-		newStr = s+str+s;
+		} else
+			return false;
 	}
-      return newStr;
-		   
-	   }
-	   
+
+	/*
+	 * Problem :-15 Given a string, take the first 2 chars and return the string
+	 * with the 2 chars added at both the front and back, so "kitten"
+	 * yields"kikittenki". If the string length is less than 2, use whatever chars
+	 * are there. front22("kitten") → "kikittenki" front22("Ha") → "HaHaHa"
+	 * front22("abc") → "ababcab"
+	 */
+	public static String problem_Fourteen(String str) {
+		String newStr;
+		if (str.length() <= 2) {
+			newStr = str + str + str;
+		} else {
+			String s = str.substring(0, 2);
+			newStr = s + str + s;
+		}
+		return newStr;
+	}
 
 	public static void main(String[] args) {
 
