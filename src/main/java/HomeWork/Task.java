@@ -42,22 +42,16 @@ public class Task {
 	 * front3("Java") → "JavJavJav" front3("Chocolate") → "ChoChoCho" front3("abc")
 	 * → "abcabcabc"
 	 */
-public static String  problem_Twelve(String str) {
-		
+	public static String problem_Twelve(String str) {
+
 		String front;
-		
-		if (str.length() <= 0 ) {
-			
-			front = str.substring(0,3);
-		}else {
+		if (str.length() <= 0) {
+			front = str.substring(0, 3);
+		} else {
 			front = str;
 		}
-			
 		return front + front + front;
-
-		 
 	}
-	
 
 	/*
 	 * Problem:-13 Given a string, take the last char and return a new string with
@@ -66,13 +60,20 @@ public static String  problem_Twelve(String str) {
 	 * backAround("Hello") → "oHelloo" backAround("a") → "aaa
 	 */
 
-	public static void main(String[] args) {  
+	public static String problem_thirteen(String str) {
+		String last = str.substring(str.length() - 1);
+		String front = last + str + last;
+		return front;
+
+	}
+
+	public static void main(String[] args) {
 
 		// The method will return a new string which i am printing using
 		System.out.println(problem_11("hello", 3));
 		System.out.println(problem_Twelve("ja"));
+		System.out.println(problem_thirteen("J"));
 
 	}
-	
 
 }
