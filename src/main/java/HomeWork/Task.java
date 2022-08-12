@@ -81,7 +81,8 @@ public class Task {
 	 * are there. front22("kitten") → "kikittenki" front22("Ha") → "HaHaHa"
 	 * front22("abc") → "ababcab"
 	 */
-	public static String problem_Fourteen(String str) {
+	public static String problem_Fifteen(String str) {
+
 		String newStr;
 		if (str.length() <= 2) {
 			newStr = str + str + str;
@@ -91,15 +92,29 @@ public class Task {
 		}
 		return newStr;
 	}
-
+     /*Problem :-16
+      * Given a string, if the string "del" appears starting at index 1, 
+      * return a string where that "del" has been deleted. Otherwise, return the string unchanged.
+        delDel("adelbc") → "abc"
+        delDel("adelHello") → "aHello"
+        delDel("adedbc") → "adedbc"
+      */
+	public static String problem_Sixteen(String str) {
+		if (str.length()>=4 && str.substring(1,4).equals("del")) {
+			return str.substring(0, 1) + str.substring(4);
+		}else 
+			return str;	
+	}
+	
 	public static void main(String[] args) {
 
 		// The method will return a new string which i am printing using
-		System.out.println(problem_11("hello", 3));
-		System.out.println(problem_Twelve("ja"));
-		System.out.println(problem_thirteen("J"));
-		System.out.println(problem_Fourteen(2));
-		System.out.println(problem_Fourteen("hello"));
+		System.out.println("inside problem 11 : -->  "+problem_11("hello", 3));
+		System.out.println("inside problem 12 : -->  "+problem_Twelve("ja"));
+		System.out.println("inside problem 13 : -->  "+problem_thirteen("J"));
+		System.out.println("inside problem 14 : -->  "+problem_Fourteen(2));
+		System.out.println("inside problem 15 : -->  "+problem_Fifteen("hello"));
+		System.out.println("inside problem 16 : -->  "+problem_Sixteen("hello"));
 
 	}
 
