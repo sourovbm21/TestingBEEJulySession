@@ -1,4 +1,4 @@
-package SeleniumPractice;
+package con.QA.SeleniumPractice;
 
 public class ClassOne {
 
