@@ -1,4 +1,4 @@
-package con.QA.SeleniumPractice;
+package Selenium;
 
 import java.util.concurrent.TimeUnit;
 
