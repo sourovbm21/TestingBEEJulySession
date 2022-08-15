@@ -85,7 +85,7 @@ public class ClassOne {
 
 		Thread.sleep(3000);
 
-		driver.quit();
+		driver.quit();//method closes all browser windows and ends the WebDriver session.
 
 	}
 
