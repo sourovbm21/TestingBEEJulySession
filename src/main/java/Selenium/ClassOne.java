@@ -53,9 +53,7 @@ public class ClassOne {
 
 		// CheckBox
 		System.out.println("before checked : " + driver.findElement(By.id("checkBoxOption2")).isSelected());
-
 		driver.findElement(By.id("checkBoxOption2")).click();
-
 		System.out.println("after checked " + driver.findElement(By.id("checkBoxOption2")).isSelected());
 		boolean b = driver.findElement(By.id("checkBoxOption2")).isSelected();
 
@@ -74,17 +72,14 @@ public class ClassOne {
 			System.out.println("Thats no a currect alert");
 		}
 
-		// scrolling in Selenium
+		// scrolling in Selenium using javaScript Executor.
 		WebElement sd = driver.findElement(By.xpath("//*[text()='Mouse Hover']"));
-
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", sd);
 
-		// Mouser hover in Selenium
+		// Mouser hover in Selenium using actions class
 		Actions action = new Actions(driver);
-
 		action.moveToElement(sd).perform();
-
 		WebElement sdd = driver.findElement(By.xpath("//*[contains(text(),'Top')]"));
 		action.moveToElement(sdd).click().perform();
 
