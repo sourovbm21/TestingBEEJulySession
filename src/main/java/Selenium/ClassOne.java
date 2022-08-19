@@ -7,6 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -17,16 +19,19 @@ public class ClassOne {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+	     WebDriverManager.chromedriver().setup();
+	    WebDriver driver = new ChromeDriver();
+	
+//		WebDriverManager.firefoxdriver().setup();
+//		WebDriver driver = new FirefoxDriver();
+//	    WebDriverManager.edgedriver().setup();
+//	    WebDriver driver = new EdgeDriver();
+		   
 		driver.manage().window().maximize();
-
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
-
-		// WebDriver driver = new FirefoxDriver();
-
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
 
 		// Page title test
 		String actual = driver.getTitle();// Practice Page
