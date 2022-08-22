@@ -19,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ClassOne {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws InterruptedException  {
 
 		
 		
@@ -98,10 +98,24 @@ public class ClassOne {
 		driver.findElement(By.xpath("//*[text()='Open Window']")).click();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
+		
+//2nd Way of dealing 		
+//		while(it.hasNext()) 
+//		{
+//		String 	windowID = it.next();
+//		driver.switchTo().window(windowID);
+//		if (!windowID.equals(driver.getWindowHandle())) 
+//		   {
+//			driver.close();
+//		    }		
+//		}
+//			
 		String parent = it.next();
 		String child =  it.next();
 		driver.switchTo().window(child);
-		String childTitle = driver.getTitle();//QA Click Academy 
+		String childTitle = driver.getTitle();//QA Click Academy
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
 		System.out.println("child page title :---> "+childTitle);
 		Assert.assertEquals(childTitle, "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy");
 		driver.switchTo().window(parent);
