@@ -21,4 +21,23 @@ public class LocatorsStrategy {
 
 //CSS child to parent: NA
 	// backward traversing in CSS: NA
+
+	// xpath axes:
+	// input[@name='email'] -- xpath
+
+	// parent to child:
+	// form[@id='hs-login']//input[@id='username']
+	// div[@class='private-form__input-wrapper']/input[@id='username']
+	// div[@class='private-form__input-wrapper']/child::input[@id='username']
+	// select[@id='Form_submitForm_Country']/option
+	// select[@id='Form_submitForm_Country']/child::option
+
+	// child to parent:
+	// backward traversing in xpath:
+	// input[@id='username']/../../../../../../../../../..
+	// input[@id='username']/parent::div
+
+	// child to ancestor:
+	// input[@id='username']/ancestor::form
+
 }
