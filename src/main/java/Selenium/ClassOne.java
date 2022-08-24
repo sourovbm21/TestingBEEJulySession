@@ -114,10 +114,12 @@ public class ClassOne {
 		String child =  it.next();
 		driver.switchTo().window(child);
 		String childTitle = driver.getTitle();//QA Click Academy
-		Thread.sleep(2000);
-		driver.switchTo().alert().accept();
+		Thread.sleep(5000);
+
 		System.out.println("child page title :---> "+childTitle);
 		Assert.assertEquals(childTitle, "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy");
+		driver.close();//will close the current window [ where Selenium is working]
+		Thread.sleep(5000);
 		driver.switchTo().window(parent);
 		String parentTitle = driver.getTitle();//Practice Page
 		Assert.assertEquals(parentTitle,"Practice Page");
@@ -139,7 +141,7 @@ public class ClassOne {
 		
 		
 	
-		driver.quit();//method closes all browser windows and ends the WebDriver session.
+		driver.quit();//method closes all browser windows opened by selenium and ends the WebDriver session.
 
 	}
 
