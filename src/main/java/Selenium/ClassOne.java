@@ -20,23 +20,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ClassOne {
 
 	public static void main(String[] args) throws InterruptedException  {
-
-		
 		
 	     WebDriverManager.chromedriver().setup();
-	    WebDriver driver = new ChromeDriver();
-	
+	    WebDriver driver = new ChromeDriver();	
 //		WebDriverManager.firefoxdriver().setup();
 //		WebDriver driver = new FirefoxDriver();
 //	    WebDriverManager.edgedriver().setup();
-//	    WebDriver driver = new EdgeDriver();
-		   
+//	    WebDriver driver = new EdgeDriver();		   
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");	
 		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
-
 //		// Page title test
 //		String actual = driver.getTitle();// Practice Page
 //		String expected = "Practice Page";
@@ -91,14 +86,11 @@ public class ClassOne {
 //		action.moveToElement(sd).perform();
 //		WebElement sdd = driver.findElement(By.xpath("//*[contains(text(),'Top')]"));
 //		action.moveToElement(sdd).click().perform();
-//		Thread.sleep(2000);
-		
-		
-		//window switch
+//		Thread.sleep(2000);		
+		     //window switch
 		driver.findElement(By.xpath("//*[text()='Open Window']")).click();
 		Set<String> window = driver.getWindowHandles();
-		Iterator<String> it = window.iterator();
-		
+		Iterator<String> it = window.iterator();	
 //2nd Way of dealing 		
 //		while(it.hasNext()) 
 //		{
@@ -108,8 +100,7 @@ public class ClassOne {
 //		   {
 //			driver.close();
 //		    }		
-//		}
-//			
+//		}			
 		String parent = it.next();
 		String child =  it.next();
 		driver.switchTo().window(child);
@@ -141,7 +132,7 @@ public class ClassOne {
 		
 		
 	
-		driver.quit();//method closes all browser windows opened by selenium and ends the WebDriver session.
+		driver.quit();//Close all browser windows opened by Selenium and ends the WebDriver session.
 
 	}
 
