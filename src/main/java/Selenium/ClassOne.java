@@ -1,11 +1,16 @@
 package Selenium;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +24,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ClassOne {
 
-	public static void main(String[] args) throws InterruptedException  {
+	public static void main(String[] args) throws InterruptedException, IOException  {
 		
 	     WebDriverManager.chromedriver().setup();
 	    WebDriver driver = new ChromeDriver();	
@@ -29,18 +34,23 @@ public class ClassOne {
 //	    WebDriver driver = new EdgeDriver();		   
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(6, TimeUnit.SECONDS);
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");	
-		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
-//		// Page title test
-//		String actual = driver.getTitle();// Practice Page
-//		String expected = "Practice Page";
-//		Assert.assertEquals(actual, expected);
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+		// Page title test
+		String actual = driver.getTitle();// Practice Page
+		String expected = "Practice Page";
+		Assert.assertEquals(actual, expected);
 //
-//		// Selecting radio button
-//		driver.findElement(By.cssSelector("input[value='radio3']")).click();
-//		boolean nes = driver.findElement(By.cssSelector("input[value='radio3']")).isSelected();
-//		Assert.assertTrue(nes);
+		// Selecting radio button
+		driver.findElement(By.cssSelector("input[value='radio3']")).click();
+		boolean nes = driver.findElement(By.cssSelector("input[value='radio3']")).isSelected();
+		Assert.assertTrue(nes);
+		///
+		
+		// capture screenshot and store the image
+	      File s = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	      FileUtils.copyFile(s, new File("practice.png"));
 //
 //		// Giving Sendkeys to text field
 //		driver.findElement(By.id("autocomplete")).clear();
