@@ -18,10 +18,10 @@ public class AutoSuggestiveDropDown {
 	    WebDriver driver = new ChromeDriver();			   
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);	
-		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(4, TimeUnit.SECONDS);	
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.get("https://www.flipkart.com/");
-		Thread.sleep(2000);
+		Thread.sleep(2000l);
 		driver.findElement(By.xpath("//div[@class='_2QfC02']/button")).click();
 		driver.findElement(By.xpath("//input[@class='_3704LK']")).sendKeys("iphone");
 		List<WebElement > totlList = driver.findElements(By.xpath("//div[contains(@class,'lrtEPN _17d0yO')]"));
@@ -32,7 +32,7 @@ public class AutoSuggestiveDropDown {
     	  totlList.get(i).click();
       }      
 		}
-		Thread.sleep(2000);
+		Thread.sleep(2000l);
 		driver.quit();
 		
 	}
