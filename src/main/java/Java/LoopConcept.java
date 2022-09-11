@@ -1,5 +1,9 @@
 package Java;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class LoopConcept {
 
 	public static void main(String[] args) {
@@ -38,8 +42,23 @@ public class LoopConcept {
 		}while (x<=y);
 	
 		
-		
-		
+		List<String> al = new ArrayList();
+		al.add("january");
+		al.add("February");
+		al.add("March");
+		al.add("December");
+		System.out.println(al);
+		Collections.sort(al);
+		System.out.println(al);
+		List<Integer> a = new ArrayList();
+		a.add(1);
+		a.add(7);
+		a.add(3);
+		a.add(8);
+	
+		System.out.println(a);
+		Collections.sort(a);
+		System.out.println(a);
 		
 		
 		
