@@ -88,7 +88,7 @@ public class ClassOne {
 //
 //		// scrolling in Selenium using javaScript Executor.
 //		WebElement sd = driver.findElement(By.xpath("//*[text()='Mouse Hover']"));
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("arguments[0].scrollIntoView();", sd);
 //
 //		// Mouser hover in Selenium using actions class

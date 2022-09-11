@@ -85,9 +85,7 @@ public class TestNG {
 	public void setup_After_Suite() {
 		System.out.println("inside after suite");
 	}
-	
-	
-	
+
 
 	
 	
