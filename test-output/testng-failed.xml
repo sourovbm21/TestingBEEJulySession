@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.BasicAuth">
+      <class name="Selenium.ActionsPractice">
         <methods>
-          <include name="basicAuthNotByPass"/>
+          <include name="testTwo"/>
         </methods>
-      </class> <!-- Selenium.BasicAuth -->
+      </class> <!-- Selenium.ActionsPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
