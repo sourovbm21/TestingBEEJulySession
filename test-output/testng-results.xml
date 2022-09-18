@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T16:47:46 BST" name="Default suite" finished-at="2022-09-17T16:48:11 BST" duration-ms="25029">
+  <suite started-at="2022-09-18T16:38:16 BST" name="Default suite" finished-at="2022-09-18T16:38:34 BST" duration-ms="18310">
     <groups>
     </groups>
-    <test started-at="2022-09-17T16:47:46 BST" name="Default test" finished-at="2022-09-17T16:48:11 BST" duration-ms="25029">
-      <class name="Selenium.ActionsPractice">
-        <test-method signature="testOne()[pri:0, instance:Selenium.ActionsPractice@46fa7c39]" started-at="2022-09-17T16:47:46 BST" name="testOne" finished-at="2022-09-17T16:48:00 BST" duration-ms="13799" status="PASS">
+    <test started-at="2022-09-18T16:38:16 BST" name="Default test" finished-at="2022-09-18T16:38:34 BST" duration-ms="18310">
+      <class name="Selenium.Calender">
+        <test-method signature="getCalender()[pri:0, instance:Selenium.Calender@53aad5d5]" started-at="2022-09-18T16:38:16 BST" name="getCalender" finished-at="2022-09-18T16:38:34 BST" duration-ms="18241" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method signature="testTwo()[pri:0, instance:Selenium.ActionsPractice@46fa7c39]" started-at="2022-09-17T16:48:00 BST" name="testTwo" finished-at="2022-09-17T16:48:11 BST" duration-ms="11132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- Selenium.ActionsPractice -->
+        </test-method> <!-- getCalender -->
+      </class> <!-- Selenium.Calender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

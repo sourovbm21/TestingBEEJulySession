@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.ActionsPractice">
+      <class name="Selenium.Calender">
         <methods>
-          <include name="testTwo"/>
+          <include name="getCalender"/>
         </methods>
-      </class> <!-- Selenium.ActionsPractice -->
+      </class> <!-- Selenium.Calender -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
