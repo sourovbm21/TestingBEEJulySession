@@ -7,6 +7,13 @@ public class ImmutableString {
 		
 		String s ="abc";
 		String y ="abc";
+		System.out.println(s.concat(y));
+		s = s.concat(y);
+		System.out.println(s);
+	
+	
+		
+		
 
 		
 	}
