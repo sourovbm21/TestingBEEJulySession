@@ -35,23 +35,23 @@ public class WebTable {
 		for(WebElement list :totallist ) {
 			list.getText();
 			//js.executeScript("document.querySelector('#table02').scrollTop=200");		
-			Thread.sleep(2000);
+//			Thread.sleep(2000);
 			js.executeScript("document.querySelector('#table02').scrollBy(0,400)");			
-			Thread.sleep(2000);
+//			Thread.sleep(2000);
 			System.out.println(list.getText());
 			if (list.getText().equals("Senior Marketing Designer")) {
-				Thread.sleep(2000);
+//				Thread.sleep(2000);
 				action.moveToElement(list).contextClick().build().perform();
-				Thread.sleep(2000);
+			Thread.sleep(2000);
 				System.out.println(" @---->> "+"i am clicking to given element");
-				//break;
+				break;
 				
 			}
 		}
 		
 		
 		
-		Thread.sleep(15000);
+		Thread.sleep(2000);
 		driver.quit();
 		
 	}
