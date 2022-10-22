@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.Calender">
+      <class name="Selenium.BasicAuth">
         <methods>
-          <include name="getCalender"/>
+          <include name="basicAuthUsingUri"/>
+          <include name="basicAuthNotByPass"/>
         </methods>
-      </class> <!-- Selenium.Calender -->
+      </class> <!-- Selenium.BasicAuth -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
