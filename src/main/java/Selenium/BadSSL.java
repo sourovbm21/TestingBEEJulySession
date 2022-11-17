@@ -16,7 +16,7 @@ public class BadSSL {
 		
 		
 		ChromeOptions  cop = new ChromeOptions();
-		cop.setAcceptInsecureCerts(true);
+		//cop.setAcceptInsecureCerts(true);
 	    WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver(cop);
 		

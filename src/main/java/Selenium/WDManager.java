@@ -13,10 +13,10 @@ public class WDManager {
 		
 		
 	
-		//WebDriverManager.chromedriver().cachePath("/Users/tohidur/Desktop/MyChromeDriver").avoidOutputTree().setup();
+		WebDriverManager.chromedriver().cachePath("/Users/tohidur/Desktop/MyChromeDriver").avoidOutputTree().setup();
 		//System.setProperty("webdriver.chrome.driver","/Users/tohidur/Desktop/MyChromeDriver/chromedriver");
-		WebDriverManager.chromedriver().cachePath("/Users/tohidur/Desktop/MyChromeDriver").avoidBrowserDetection().setup();
-		System.setProperty("webdriver.chrome.driver","/Users/tohidur/Desktop/MyChromeDriver/chromedriver/mac64/107.0.5304.62/chromedriver");
+		//WebDriverManager.chromedriver().cachePath("/Users/tohidur/Desktop/MyChromeDriver").avoidBrowserDetection().setup();
+		//System.setProperty("webdriver.chrome.driver","/Users/tohidur/Desktop/MyChromeDriver/chromedriver/mac64/107.0.5304.62/chromedriver");
 	
 	
 		WebDriver driver = new ChromeDriver();
